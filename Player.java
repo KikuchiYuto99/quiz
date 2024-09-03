@@ -14,4 +14,8 @@ public class Player {
     public int getCorrectQuizNum() {
         return this.correctQuizNum;
     }
+
+    public void showCorrectQuizNum() {
+        System.out.println("正答数:" + this.correctQuizNum);
+    }
 }
