@@ -8,4 +8,12 @@ public class Choice {
         this.index = index;
         this.text = text;
     }
+    
+        public int getIndex() {
+        return this.index;
+    }
+
+    public String getText() {
+        return this.text;
+    }
 }
