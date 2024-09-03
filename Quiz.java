@@ -18,4 +18,13 @@ public class Quiz {
     public boolean isCorrect(int givenAnswer) {
         return givenAnswer == this.answer;
     }
+
+    public void showQuiz() {
+        System.out.println("[問題" + this.quizNumber + "]");
+        System.out.println(this.mainText);
+        for (Choice choice : choices) {
+            System.out.println(choice.getIndex() + "." + choice.getText());
+        }
+        System.out.print("こたえを入力してください>");
+    }
 }
